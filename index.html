@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PAGE AI</title>
+  </head>
+  <body>
+    <h1 class="pageTitle">PAGE AI</h1>
+    <div id="container">
+      <div class="description">
+        <p id="greetingParagraph"></p>
+        <h2>cari pertanyaan mu di sini</h2>
+        <form action="" id="metaForm">
+          <label for="title">Title: </label>
+          <textarea
+            name="title"
+            id="title"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <button type="button" onclick="generateMeta()">Generate AI</button>
+        </form>
+        <div id="metaResponse"></div>
+        <h1>Image AI</h1>
+        <form id="imageForm">
+          <label for="title">Masukan prompt: </label>
+          <input type="text" id="prompt" name="prompt" required />
+          <button type="button" onclick="generateImage()">
+            Generate AI Gambar
+          </button>
+        </form>
+        <div id="imageResultContainer">
+          <img id="imageResult" />
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
